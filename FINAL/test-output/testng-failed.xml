@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Google Test Suite]">
+  <listeners>
+    <listener class-name="listen.TestListener"/>
+    <listener class-name="listen.AnnotationTransformer"/>
+  </listeners>
+  <test name="Multiple Test(failed)">
+    <classes>
+      <class name="test.CheckInstagram">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="instagram"/>
+        </methods>
+      </class> <!-- test.CheckInstagram -->
+      <class name="test.CheckLinkedin">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="linkedin"/>
+        </methods>
+      </class> <!-- test.CheckLinkedin -->
+      <class name="test.CheckOrkut">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="orkut"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- test.CheckOrkut -->
+      <class name="test.CheckTwitter">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="twitter"/>
+        </methods>
+      </class> <!-- test.CheckTwitter -->
+    </classes>
+  </test> <!-- Multiple Test(failed) -->
+</suite> <!-- Failed suite [Google Test Suite] -->
