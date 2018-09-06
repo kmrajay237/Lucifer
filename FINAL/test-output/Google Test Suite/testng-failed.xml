@@ -7,13 +7,6 @@
   </listeners>
   <test name="Multiple Test(failed)">
     <classes>
-      <class name="test.CheckInstagram">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="instagram"/>
-        </methods>
-      </class> <!-- test.CheckInstagram -->
       <class name="test.CheckLinkedin">
         <methods>
           <include name="closeBrowser"/>
